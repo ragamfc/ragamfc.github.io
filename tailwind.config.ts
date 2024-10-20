@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import tailwindcssAnimate from 'tailwindcss-animate';
+import tailwindcssAnimate from "tailwindcss-animate";
 
 const config: Config = {
   darkMode: ["class"],
@@ -21,9 +21,7 @@ const config: Config = {
         },
       },
       colors: {
-        colors: {
-          ragam_red: "#d31145",
-        },
+        ragam_red: "#d31145",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
