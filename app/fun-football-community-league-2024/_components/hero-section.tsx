@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div className="relative z-[10] h-screen 2xl:h-[720px] bg-cover bg-no-repeat bg-[url('/images/dominik-kuhn-kEHp1gUJNO8-unsplash.webp')] bg-[#d01144] bg-blend-multiply">
         <div className="container">
           <div className="absolute left-0 top-0 z-[20] h-full w-full bg-[rgba(0,0,0,0.5)]"></div>
-          <div className="absolute z-[40] top-10 w-full space-y-4 px-8 sm:top-24 xl:px-36">
+          <div className="absolute z-[40] top-10 space-y-4 px-8 sm:top-24 xl:px-36">
             <div className="flex gap-2 items-center">
               <div className="h-32 w-32 sm:h-48 sm:w-48 p-2 bg-white rounded-full">
                 <Image
