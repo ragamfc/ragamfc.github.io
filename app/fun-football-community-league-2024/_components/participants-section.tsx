@@ -37,14 +37,15 @@ export default function ParticipantsSection() {
         {participantLogos.map((participantLogo) => (
           <li
             key={participantLogo.club}
-            className="shrink-0 items-center w-40 p-4"
+            className="shrink-0 items-center w-40 p-2"
           >
             <Image
-              width={160}
-              height={160}
+              width={240}
+              height={240}
               src={`/images/participants/${participantLogo.filename}`}
               alt={participantLogo.club}
               title={participantLogo.club}
+              className="border shadow-md bg-white rounded-3xl p-2"
             />
           </li>
         ))}

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="w-full text-white">
-      <div className="relative z-[10] h-screen 2xl:h-[720px] bg-cover bg-no-repeat bg-[url('/images/dominik-kuhn-kEHp1gUJNO8-unsplash.webp')] bg-[#d01144] bg-blend-multiply">
+      <div className="relative z-[10] h-screen md:min-h-[640px] 2xl:h-[720px] bg-cover bg-no-repeat bg-[url('/images/dominik-kuhn-kEHp1gUJNO8-unsplash.webp')] bg-[#d01144] bg-blend-multiply">
         <div className="container">
           <div className="absolute left-0 top-0 z-[20] h-full w-full bg-[rgba(0,0,0,0.5)]"></div>
           <div className="absolute z-[40] top-10 space-y-4 px-8 sm:top-24 xl:px-36">
