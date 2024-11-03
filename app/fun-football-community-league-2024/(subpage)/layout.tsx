@@ -26,7 +26,7 @@ export default function SubPageLayout({
             </div>
           </div>
         </div>
-        <ul className="flex gap-8 px-4 py-2 h-full text-white overflow-x-scroll text-nowrap items-center font-bold">
+        <ul className="flex gap-8 px-4 py-2 h-full text-white overflow-x-auto text-nowrap items-center font-bold">
           <li>
             <Link href="/fun-football-community-league-2024">Home</Link>
           </li>
