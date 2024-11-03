@@ -8,7 +8,9 @@ export default function JadwalPage() {
         <div className="border-4 border-ragam_red rounded-full max-w-sm"></div>
       </section>
       <div>
-        <div className="container px-8 py-8 flex gap-4">
+        <div className="container px-8 py-8 grid gap-4 grid-cols-1 lg:grid-cols-2">
+          <MatchDay className="shadow-lg" />
+          <MatchDay className="shadow-lg" />
           <MatchDay className="shadow-lg" />
           <MatchDay className="shadow-lg" />
         </div>

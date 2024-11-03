@@ -44,9 +44,9 @@ export default function KlasemenPage() {
         <div className="border-4 border-ragam_red rounded-full max-w-sm"></div>
       </section>
       <div className="bg-gradient-to-r from-red-700 to-rose-800">
-        <div className="container px-8 py-8">
-          <div className="bg-white rounded-sm p-4">
-            <table className="w-full ">
+        <div className="container px-4 md:px-8 py-8">
+          <div className="bg-white rounded-sm p-4 text-nowrap overflow-scroll">
+            <table className="w-full">
               <thead>
                 <tr className="border-b-2 border-ragam_red rounded-full">
                   <th>Posisi</th>
