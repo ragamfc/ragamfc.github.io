@@ -34,7 +34,7 @@ const sponsors: {
 
 export default function SponsorsSection() {
   return (
-    <section className="py-4 bg-gray-100">
+    <section className="py-4 relative z-[10] bg-cover bg-gray-100">
       <MarqueeSponsorList sponsors={sponsors} />
     </section>
   );
