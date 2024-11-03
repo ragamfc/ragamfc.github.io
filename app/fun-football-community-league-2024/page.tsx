@@ -22,6 +22,27 @@ export default function Page() {
         </section>
       </div>
 
+      <div className="bg-red-700">
+        <div className="px-4 container my-8 py-12">
+          {/* Match Result */}
+          <section>
+            <HeadingOne className="text-white">Hasil Pertandingan Terbaru</HeadingOne>
+            <div className="max-w-5xl mx-auto text-center text-white text-xl pt-8">Sabtu, 5 November 2024</div>
+            <div className="flex flex-wrap justify-center gap-4 py-4 max-w-5xl mx-auto">
+              <MatchScore />
+              <MatchScore />
+              <MatchScore />
+              <MatchScore />
+            </div>
+            <div className="max-w-5xl mx-auto text-center">
+              <a href="/fun-football-community-league-2024/hasil-pertandingan">
+              <span className="font-semibold px-2 py-1 text-lg text-white">selengkapnya</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+
       <div className="px-4 container">
         <ParticipantsSection />
       </div>
@@ -45,7 +66,7 @@ function MatchDay() {
         <div>
           <div className="text-center text-lg py-2">15:00 WIB</div>
           <div>
-            <div className="flex items-end gap-2 leading-none">
+            <div className="flex items-center gap-2 leading-none">
               <div>
                 <Image
                   width={32}
@@ -73,6 +94,40 @@ function MatchDay() {
           </div>
         </div>
       </section>
+    </div>
+  );
+}
+
+function MatchScore() {
+  return (
+    <div className="flex flex-grow-0 bg-white justify-between py-4 px-8 rounded-sm min-w-[416px]">
+      <div className="flex flex-1 items-center gap-2 leading-none">
+        <div>
+          <Image
+            width={32}
+            height={32}
+            src={`/images/participants/daacab-football-club.png`}
+            alt={"club"}
+            title={"title"}
+          />
+        </div>
+        <div className="text-2xl">BGY</div>
+      </div>
+      <div className="text-2xl px-2 bg-red-700 rounded-sm text-white font-bold">
+        0 - 0
+      </div>
+      <div className="flex flex-1  items-center gap-2 leading-none justify-end">
+        <div>
+          <Image
+            width={32}
+            height={32}
+            src={`/images/participants/daacab-football-club.png`}
+            alt={"club"}
+            title={"title"}
+          />
+        </div>
+        <div className="text-2xl">BGY</div>
+      </div>
     </div>
   );
 }
