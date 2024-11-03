@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SubPageLayout({
   children,
@@ -27,25 +28,27 @@ export default function SubPageLayout({
         </div>
         <ul className="flex gap-8 px-4 py-2 h-full text-white overflow-x-scroll text-nowrap items-center font-bold">
           <li>
-            <a href="/fun-football-community-league-2024">Home</a>
+            <Link href="/fun-football-community-league-2024">Home</Link>
           </li>
           <li>
-            <a href="/fun-football-community-league-2024/klasemen">Klasemen</a>
+            <Link href="/fun-football-community-league-2024/klasemen">
+              Klasemen
+            </Link>
           </li>
           <li>
-            <a href="/fun-football-community-league-2024/jadwal">Jadwal</a>
+            <Link href="/fun-football-community-league-2024/jadwal">
+              Jadwal
+            </Link>
           </li>
           <li>
-            <a href="/fun-football-community-league-2024/hasil-pertandingan">
+            <Link href="/fun-football-community-league-2024/hasil-pertandingan">
               Hasil Pertandingan
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
 
-      <section>
-        {children}
-      </section>
+      <section>{children}</section>
     </>
   );
 }
